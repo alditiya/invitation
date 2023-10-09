@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+    
+    <!-- Sisipkan Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Gaya tambahan jika diperlukan */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tiga kolom per baris */
+            gap: 20px; /* Jarak antar gambar */
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Galeri Foto</h1>
+        
+        <!-- Galeri foto -->
+        <div class="gallery">
+            <div class="card">
+                <img src="img/alana.jpeg" class="card-img-top" alt="Gambar 1">
+            </div>
+            <div class="card">
+                <img src="img/bg-prewed.jpeg" class="card-img-top" alt="Gambar 2">
+            </div>
+            <div class="card">
+                <img src="img/aldinela.jpeg" class="card-img-top" alt="Gambar 3">
+            </div>
+            <!-- Tambahkan lebih banyak gambar di sini -->
+        </div>
+    </div>
+    
+    <!-- Sisipkan Bootstrap JS (untuk fungsi modal jika diperlukan) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
