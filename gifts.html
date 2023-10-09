@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts Pages</title>
+
+    <!-- Sisipkan Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Sisipkan jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Sisipkan QR Code.js -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+    <style>
+        /* Gaya tambahan jika diperlukan */
+        body {
+            background-color: #ffffff;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">QR Code</h1>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div id="qrcode"></div>
+                        <p>Gunakan QR Code ini untuk memberi kami dukungan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sisipkan Bootstrap JS (jika diperlukan) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Script untuk menghasilkan QR Code -->
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: "https://saweria.co/PapakWukWuk", // Ganti dengan URL Saweria Anda
+            width: 128,
+            height: 128
+        });
+    </script>
+</body>
+
+</html>

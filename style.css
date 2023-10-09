@@ -1,5 +1,5 @@
 :root {
-    --pink: #907a00;
+    --pink: #ffcafb;
     --bg: #0a0a0a;
     --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
@@ -115,7 +115,7 @@ body {
 .home .couple h3 {
     font-family: 'sacramento', cursive;
     font-size: 2.4rem;
-    color: var(--pink);
+    color: rgb(139, 128, 2);
 }
 
 .home .couple img {
@@ -136,7 +136,7 @@ body {
 
 .home .heart i {
     margin: auto;
-    color: var(--pink);
+    color: rgb(252, 110, 134);
 }
 
 .info {
